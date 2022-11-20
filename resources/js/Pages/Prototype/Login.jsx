@@ -1,3 +1,4 @@
+import Input from "@/Components/TextInput";
 export default function Login() {
     return (
         <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
@@ -26,11 +27,16 @@ export default function Login() {
                                 <label className="text-base block mb-2">
                                     Email Address
                                 </label>
-                                <input
+                                {/* <input
                                     type="email"
                                     name="email"
                                     className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
                                     placeholder="Email Address"
+                                /> */}
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    placeholder={"Email Address"}
                                 />
                             </div>
                             <div>
