@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "input.css";
+@import "button.css";
 .flex::before,
 .flex::after {
     display: none !important;

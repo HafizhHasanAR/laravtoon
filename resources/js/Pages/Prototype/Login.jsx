@@ -1,4 +1,8 @@
 import Input from "@/Components/TextInput";
+import InputLabel from "@/Components/InputLabel";
+import PrimaryButton from "@/Components/PrimaryButton";
+import { Link } from "@inertiajs/inertia-react";
+
 export default function Login() {
     return (
         <div className="mx-auto max-w-screen min-h-screen bg-black text-white md:px-10 px-3">
@@ -24,9 +28,9 @@ export default function Login() {
                     <form className="w-[370px]">
                         <div className="flex flex-col gap-6">
                             <div>
-                                <label className="text-base block mb-2">
+                                <InputLabel className="text-base block mb-2">
                                     Email Address
-                                </label>
+                                </InputLabel>
                                 {/* <input
                                     type="email"
                                     name="email"
@@ -40,10 +44,10 @@ export default function Login() {
                                 />
                             </div>
                             <div>
-                                <label className="text-base block mb-2">
+                                <InputLabel className="text-base block mb-2">
                                     Password
-                                </label>
-                                <input
+                                </InputLabel>
+                                <Input
                                     type="password"
                                     name="password"
                                     className="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
@@ -52,22 +56,27 @@ export default function Login() {
                             </div>
                         </div>
                         <div className="grid space-y-[14px] mt-[30px]">
-                            <a
-                                href="/"
+                            <PrimaryButton
+                                type="button"
+                                variant="primary"
                                 className="rounded-2xl bg-alerange py-[13px] text-center"
                             >
                                 <span className="text-base font-semibold">
                                     Start Watching
                                 </span>
-                            </a>
-                            <a
-                                href="sign_up.html"
-                                className="rounded-2xl border border-white py-[13px] text-center"
-                            >
-                                <span className="text-base text-white">
-                                    Create New Account
-                                </span>
-                            </a>
+                            </PrimaryButton>
+
+                            <Link href={route("prototype.register")}>
+                                <PrimaryButton
+                                    type="button"
+                                    variant="light-outline"
+                                    className="rounded-2xl border border-white py-[13px] text-center"
+                                >
+                                    <span className="text-base text-white">
+                                        Create New Account
+                                    </span>
+                                </PrimaryButton>
+                            </Link>
                         </div>
                     </form>
                 </div>
