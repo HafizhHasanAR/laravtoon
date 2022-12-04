@@ -2,6 +2,7 @@ import Authenticated from "@/Layouts/Authenticated/Index";
 import Flickity from "react-flickity-component";
 import { Head, Link } from "@inertiajs/inertia-react";
 import FeaturedMovie from "@/Components/FeaturedMovie";
+import MovieCard from "@/Components/MovieCard";
 
 export default function Dashboard() {
     const flickityOptions = {
@@ -43,8 +44,26 @@ export default function Dashboard() {
                         ))}
                     </Flickity>
                 </div>
+                <div>
+                    <div className="font-semibold text-[22px] text-black mb-4 mt-[20px]">
+                        Browse
+                    </div>
+                    <Flickity
+                        className="__scroll-selector"
+                        options={flickityOptions}
+                    >
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
+                            <MovieCard
+                                key={i}
+                                slug="the-batman-in-love"
+                                name={`The Batman in Love ${i}`}
+                                category="Comedy/Action"
+                                thumbnail="https://picsum.photos/id/1/300/300"
+                            />
+                        ))}
+                    </Flickity>
+                </div>
             </div>
-            ;
         </Authenticated>
     );
 }
