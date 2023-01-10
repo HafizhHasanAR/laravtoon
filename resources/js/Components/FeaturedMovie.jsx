@@ -6,7 +6,7 @@ FeaturedMovie.propTypes = {
     name: PropType.string.isRequired,
     category: PropType.string.isRequired,
     thumbnail: PropType.string.isRequired,
-    rating: PropType.number.isRequired,
+    rating: PropType.number,
 };
 
 export default function FeaturedMovie({

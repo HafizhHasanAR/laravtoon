@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('category', 100);
             $table->string('video_url');
             $table->string('thumbnail');
-            $table->string('rating')->default(0);
+            $table->float('rating')->default(0);
             $table->boolean('is_featured')->default(false);
             $table->timestamps();
             $table->softDeletes();

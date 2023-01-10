@@ -22,7 +22,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Drama',
                 'video_url' => 'https://www.youtube.com/watch?v=6hB3S9bIaco',
                 'thumbnail' => 'https://i.ytimg.com/vi/6hB3S9bIaco/maxresdefault.jpg',
-                'rating' => 9.3,
+                'rating' => 4.3,
                 'is_featured' => 1,
             ],
             [
@@ -31,8 +31,8 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Crime',
                 'video_url' => 'https://www.youtube.com/watch?v=sY1S34973zA',
                 'thumbnail' => 'https://i.ytimg.com/vi/sY1S34973zA/maxresdefault.jpg',
-                'rating' => 9.2,
-                'is_featured' => 0,
+                'rating' => 4.3,
+                'is_featured' => 1,
             ],
             [
                 'name' => 'The Dark Knight',
@@ -40,7 +40,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=EXeTwQWrcwY',
                 'thumbnail' => 'https://i.ytimg.com/vi/EXeTwQWrcwY/maxresdefault.jpg',
-                'rating' => 9.0,
+                'rating' => 4.3,
                 'is_featured' => 0,
             ],
             [
@@ -49,7 +49,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Crime',
                 'video_url' => 'https://www.youtube.com/watch?v=qJr4QZxYjYQ',
                 'thumbnail' => 'https://i.ytimg.com/vi/qJr4QZxYjYQ/maxresdefault.jpg',
-                'rating' => 9.0,
+                'rating' => 4.3,
                 'is_featured' => 0,
             ],
             [
@@ -58,8 +58,8 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Adventure',
                 'video_url' => 'https://www.youtube.com/watch?v=r5X-hFf6Bwo',
                 'thumbnail' => 'https://i.ytimg.com/vi/r5X-hFf6Bwo/maxresdefault.jpg',
-                'rating' => 8.9,
-                'is_featured' => 1,
+                'rating' => 4.3,
+                'is_featured' => 0,
             ],
           
            
